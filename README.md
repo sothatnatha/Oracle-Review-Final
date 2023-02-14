@@ -1,4 +1,5 @@
 #Reviews Oracle Statement For Final Year3 S1 
+#sothatnatha
 --1
 SELECT job_id,
 DECODE(job_id, 'IT_PROG',salary*1.1,
@@ -89,8 +90,7 @@ FROM employees
 CROSS JOIN departments
 CROSS JOIN locations;
 
---16
--- Join 3 tables
+--16 (Join 3 tables)
 SELECT e.last_name, l.city, d.department_name
 FROM employees e JOIN departments d
 ON d.department_id = e.department_id JOIN locations l
